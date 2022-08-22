@@ -214,7 +214,7 @@ a:hover {
 	visibility: hidden;
 	top: 90px;
   left: 50px;
-	width: 280px;
+	width: 250px;
 	text-align: left;
 }
 .nav__list {
@@ -318,7 +318,7 @@ body.nav-active .nav {
 }
 body.nav-active .nav:before, body.nav-active .nav:after {
 	width: 250px;
-	height: 350px;
+	height: 390px;
 	border-radius: 15px;
 }
 body.nav-active .nav:after {
