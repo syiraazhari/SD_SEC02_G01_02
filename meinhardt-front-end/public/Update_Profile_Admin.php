@@ -9,11 +9,11 @@
 		$password = $_POST['password'];
 		$address = $_POST['address'];
 		
-		$select = "SELECT * from patient where username='$username'";
+		$select = "SELECT * from 'admin' where username='$username'";
 		$sql = mysqli_query($conn, $select);
 		$row = mysqli_fetch_assoc($sql);
 		
-		$update = "UPDATE 'patient' set 'phoneNumber' = '$contactNo', 'email' = '$email', 'password' = '$password', 'address' = '$address' where username = '$username'";
+		$update = "UPDATE 'admin' set 'phoneNumber' = '$contactNo', 'email' = '$email', 'password' = '$password', 'address' = '$address' where username = '$username'";
 		$sql12 = mysqli_query($conn,$update);
 		
 		if($sql12)
