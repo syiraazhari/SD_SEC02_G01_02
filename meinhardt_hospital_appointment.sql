@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 28, 2022 at 07:07 PM
--- Server version: 10.4.22-MariaDB
--- PHP Version: 8.1.2
+-- Generation Time: Sep 13, 2022 at 04:39 PM
+-- Server version: 10.4.21-MariaDB
+-- PHP Version: 8.0.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -29,10 +29,19 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `admin` (
   `username` varchar(20) NOT NULL,
+  `email` varchar(50) NOT NULL,
   `password` varchar(20) NOT NULL,
   `name` varchar(50) NOT NULL,
+  `address` varchar(100) NOT NULL,
   `phoneNumber` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`username`, `email`, `password`, `name`, `address`, `phoneNumber`) VALUES
+('admin1', '-', 'password123', '-', '', '-');
 
 -- --------------------------------------------------------
 
@@ -70,13 +79,22 @@ CREATE TABLE `doctor` (
 --
 
 CREATE TABLE `patient` (
-  `username` varchar(20) NOT NULL,
-  `password` varchar(20) NOT NULL,
-  `name` varchar(50) NOT NULL,
-  `phoneNumber` varchar(10) NOT NULL,
-  `age` int(11) NOT NULL,
-  `gender` varchar(10) NOT NULL
+  `Username` varchar(100) NOT NULL,
+  `Email` varchar(100) NOT NULL,
+  `Password` varchar(100) NOT NULL,
+  `Name` varchar(100) NOT NULL,
+  `Address` varchar(100) NOT NULL,
+  `phoneNumber` varchar(100) NOT NULL,
+  `Age` int(100) NOT NULL,
+  `Gender` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `patient`
+--
+
+INSERT INTO `patient` (`Username`, `Email`, `Password`, `Name`, `Address`, `phoneNumber`, `Age`, `Gender`) VALUES
+('', 'Kisvaan986912lifecool@gmail.com', '1010101012kisvaan', 'Kisvaan', '', '', 0, '');
 
 --
 -- Indexes for dumped tables
@@ -100,6 +118,12 @@ ALTER TABLE `appointment`
 --
 ALTER TABLE `doctor`
   ADD PRIMARY KEY (`username`);
+
+--
+-- Indexes for table `patient`
+--
+ALTER TABLE `patient`
+  ADD PRIMARY KEY (`Email`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
