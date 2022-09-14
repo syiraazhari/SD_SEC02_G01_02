@@ -35,11 +35,11 @@ session_start();
 		   
 		  if(mysqli_num_rows($qry) > 0)
 		  {
-			 $_SESSION["Email"] = $row['Email'];
-			 $_SESSION["Password"] = $row['Password'];
+			 $_SESSION["email"] = $row['email'];
+			 $_SESSION["password"] = $row['password'];
 			 
-			 if(isset($_SESSION['Email']))
-	          if(isset($_SESSION['Password']))
+			 if(isset($_SESSION['email']))
+	          if(isset($_SESSION['password']))
 		   {
 			   header("Location:../homepagepatient.html");
 			  
