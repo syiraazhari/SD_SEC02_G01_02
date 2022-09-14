@@ -9,7 +9,7 @@
 	<hr>
 	<div class="container" id="container">
 		<div class="form-container sign-up-container">
-			<form action="#">
+			<form method="post" action="./processPatient.php">
 				<h1>Create Account</h1>
 				<!--<div class="social-container">
 					<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -17,14 +17,14 @@
 					<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
 				</div>
 				<span>or use your email for registration</span>-->
-				<input type="text" placeholder="Name" />
-				<input type="email" placeholder="Email" />
-				<input type="password" placeholder="Password" />
-				<button><a href="../../meinhardt-front-end/public/emailverification.html">Sign Up</a></button>
+				<input type="text" name="patientName" placeholder="Name"  required />
+				<input type="email" name="patientEmail" placeholder="Email" required />
+				<input type="password" name="patientPassword" placeholder="Password" />
+				<button name="registerPatient" type="submit">Sign Up</button>
 			</form>
 		</div>
 		<div class="form-container sign-in-container">
-			<form action="#">
+			<form method="post" action="./processPatient.php">
 				<h1>Sign in</h1>
 				<!--<div class="social-container">
 					<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -32,10 +32,10 @@
 					<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
 				</div>
 				<span>or use your account</span>-->
-				<input type="email" placeholder="Email" />
-				<input type="password" placeholder="Password" />
+				<input name="loginEmail" type="email" placeholder="Email" required />
+				<input name="loginPassword" type="text" placeholder="Password" required />
 				<a href="../../meinhardt-front-end/public/forgotpass.html">Forgot your password?</a>
-				<button><a href="../../meinhardt-front-end/public/homepagepatient.html">Sign In</a></button>
+				<button name="loginPatient" type="submit">Sign In</button>
 			</form>
 		</div>
 		<div class="overlay-container">
