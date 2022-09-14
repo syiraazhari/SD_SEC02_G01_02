@@ -10,7 +10,7 @@
     <!-- ===============================================-->
     <!--    Document Title-->
     <!-- ===============================================-->
-    <title>Meinhardt Hospital</title>
+    <title>Your Profile</title>
 
 
     <!-- ===============================================-->
@@ -35,25 +35,27 @@
 
 <body>
 
+
     <!-- ===============================================-->
     <!--    Main Content-->
     <!-- ===============================================-->
     <main class="main" id="top">
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 d-block" data-navbar-on-scroll="data-navbar-on-scroll">
             <div class="container">
-                <a class="navbar-brand" href="index.html"><img src="assets/img/gallery/logo.png" width="118" alt="logo" /></a>
+                <a class="navbar-brand" href="homepagepatient.html"><img src="assets/img/gallery/logo.png" width="118" alt="logo" /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"> </span></button>
                 <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base">
-              <li class="nav-item px-2"><a class="nav-link" aria-current="page" href="C:\Users\manka\Desktop\SEM 5\software development\github clone\clone 1\SD_SEC02_G01_02\meinhardt-front-end\public\signupguest.html">About Us</a></li>
-              <li class="nav-item px-2"><a class="nav-link" href="#departments">Departments</a></li>
-              <li class="nav-item px-2"><a class="nav-link" href="./signPage.html">Sign Up</a></li>
+                    <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base">
+              <li class="nav-item px-2"><a class="nav-link" aria-current="page" href="C:\Users\manka\Desktop\SEM 5\software development\github clone\clone 1\SD_SEC02_G01_02\meinhardt-front-end\public\signupguest.html">My Profile</a></li>
+              <li class="nav-item px-2"><a class="nav-link" href="../../meinhardt-front-end/public/appointmentbookpatient.html">Book Appointment</a></li>
               <li class="nav-item px-2"><a class="nav-link" href="#findUs">Help </a></li>
               <li class="nav-item px-2"><a class="nav-link" href="#findUs">Contact</a></li>
-            </ul><a class="btn btn-sm btn-outline-primary rounded-pill order-1 order-lg-0 ms-lg-4" href="./signPage.html">Sign In</a>
+			  
+			  
+           </ul><a class="btn btn-sm btn-outline-primary rounded-pill order-1 order-lg-0 ms-lg-4" href=""> Sign Out</a>
                 </div>
             </div>
-        </nav>
+     </nav>
         <section class="py-xxl-10 pb-0" id="home">
             <div class="bg-holder bg-size" style="background-image:url(assets/img/gallery/hero-bg.png);background-position:top center;background-size:cover;">
             </div>
@@ -61,17 +63,17 @@
 
             <div class="container">
                 <div class="row min-vh-xl-100 min-vh-xxl-25">
-                    <div class="col-md-5 col-xl-6 col-xxl-7 order-0 order-md-1 text-end">
-					</div>
-                    <div class="col-md-75 col-xl-6 col-xxl-5 text-md-start text-center py-6">
-
-                        <p class="fs-1 mb-5">You have successfully signed out. </p>
-						<a class="fs-1 mb-5" href="../../meinhardt-front-end/public/index.html">Click here to go proceed to the homepage. </a>
-                        <div class="d-grid">
-                        </div>
-                    </div>
-                </div>
+            <div class="col-md-5 col-xl-6 col-xxl-7 order-0 order-md-1 text-end"><img class="pt-7 pt-md-0 w-100" src="assets/img/gallery/hero.png" alt="hero-header" /></div>
+            <div class="col-md-75 col-xl-6 col-xxl-5 text-md-start text-center py-6">
+              <?php
+              ?>
+				
+              <div class="d-grid">
+                  <a href="../../meinhardt-front-end/public/updateprofilepatient.html"><button class="btn btn-primary rounded-pill" type="submit">Update Profile</button></a>
+              </div>
             </div>
+          </div>
+        </div>
 			</section>
         <section class="py-0 bg-secondary">
             <div class="bg-holder opacity-25" style="background-image:url(assets/img/gallery/dot-bg.png);background-position:top left;margin-top:-3.125rem;background-size:auto;">
@@ -157,6 +159,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&amp;family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&amp;display=swap" rel="stylesheet">
+
+
+
+
+
+
 </body>
 
 </html>
