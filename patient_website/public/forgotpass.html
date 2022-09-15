@@ -63,13 +63,15 @@
                 <div class="row min-vh-xl-100 min-vh-xxl-25">
                     <div class="col-md-5 col-xl-6 col-xxl-7 order-0 order-md-1 text-end">
 					</div>
+                    <form method="post" action="./login_signup/processPatient.php">
                     <div class="col-md-75 col-xl-6 col-xxl-5 text-md-start text-center py-6">
 
                         <p class="fs-1 mb-5">Please enter your email </p>
 						<p class="fs-1 mb-5">Email: </p>
+                        
                         <div class="col-md-6">
                             <label class="form-label visually-hidden" for="inputEmail">Email</label>
-                            <input class="form-control form-livedoc-control" id="inputEmail" type="email" placeholder="Email" />
+                            <input name="forgotPasswordEmail" class="form-control form-livedoc-control" id="inputEmail" type="email" placeholder="Email" />
                         </div>
 						<p class="fs-1 mb-5">Make sure you check your spam category. </p>
 						
@@ -80,6 +82,7 @@
                         <div class="d-grid">
                         </div>
                     </div>
+                    </form>
                 </div>
             </div>
 			</section>

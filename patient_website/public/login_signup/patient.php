@@ -56,6 +56,13 @@ session_start();
        
 	}
 
+	function sendPasswordToEmail() {
+		ini_set('display_errors', '1' );
+		echo "Password sent to email address";
+
+		mail("harrazhaziqazlim@gmail.com", "Password for Meinhardt Website", "Password = helloWorld123");
+	}
+
 
   
 ?>

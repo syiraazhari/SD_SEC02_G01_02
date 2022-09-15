@@ -10,5 +10,9 @@
         loginPatient();
     }
 
+    if (isset($_POST['forgotPasswordEmail'])) {
+        sendPasswordToEmail();
+    }
+
 
 ?>
