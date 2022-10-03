@@ -3,15 +3,12 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
-<<<<<<< HEAD
 -- Generation Time: Sep 11, 2022 at 02:00 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.11
-=======
 -- Generation Time: Sep 13, 2022 at 04:39 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.12
->>>>>>> 14d2758319df38cb454674d75e5010cb539a413f
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -85,7 +82,6 @@ CREATE TABLE `doctor` (
 --
 
 CREATE TABLE `patient` (
-<<<<<<< HEAD
   `username` varchar(20) NOT NULL,
   `email` varchar(50) NOT NULL,
   `password` varchar(20) NOT NULL,
@@ -94,16 +90,6 @@ CREATE TABLE `patient` (
   `phoneNumber` varchar(10) NOT NULL,
   `age` int(11) NOT NULL,
   `gender` varchar(10) NOT NULL
-=======
-  `Username` varchar(100) NOT NULL,
-  `Email` varchar(100) NOT NULL,
-  `Password` varchar(100) NOT NULL,
-  `Name` varchar(100) NOT NULL,
-  `Address` varchar(100) NOT NULL,
-  `phoneNumber` varchar(100) NOT NULL,
-  `Age` int(100) NOT NULL,
-  `Gender` varchar(100) NOT NULL
->>>>>>> 14d2758319df38cb454674d75e5010cb539a413f
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
