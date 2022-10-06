@@ -76,23 +76,6 @@ th, td {
               <h1 class="fw-light font-base fs-6 fs-xxl-7">Hello <strong> Dr. Piri </strong>
               <p class="fs-1 mb-5">How are you doing today? <br />You can refer to your appointment schedule for today.</p>
 				  
-				  <table>
-					<tr>
-						<th>Name</th>
-						<th>Date</th>
-						<th>Time</th>
-				  </tr>
-				  <tr>
-						<td>Minu Yoon</td>
-						<td>23 Feb</td>
-						<td>07.30AM</td>
-				  </tr>
-				  <tr>
-						<td>Minu Yoon</td>
-						<td>23 Feb</td>
-						<td>07.30AM</td>
-				  </tr>
-				</table>
 				  
             </div>
           </div>

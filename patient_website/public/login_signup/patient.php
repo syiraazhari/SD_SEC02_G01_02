@@ -45,13 +45,15 @@ session_start();
 		   
 		  if(mysqli_num_rows($qry) > 0)
 		  {
-			 $_SESSION["email"] = $row['email'];
-			 $_SESSION["password"] = $row['password'];
+            header("Location:../homepagepatient.html");
+
+			 $_SESSION["Email"] = $row['Email'];
+			 $_SESSION["Password"] = $row['Password'];
 			 
 			 if(isset($_SESSION['email']))
 	          if(isset($_SESSION['password']))
 		   {
-			   header("Location:../homepagepatient.html");
+			   
 			  
 		   }
 			   
@@ -73,7 +75,7 @@ session_start();
         echo $patientEmail;
 
         $con = mysqli_connect("localhost", "web39", "web39", "meinhardt_hospital_appointment");
-        $sql = "SELECT * FROM `patient` WHERE email = '".$patientEmail."'";
+        $sql = "SELECT * FROM `patient` WHERE Email = '".$patientEmail."'";
         $qry = mysqli_query($con, $sql);
         $row = mysqli_fetch_array($qry);
 	
@@ -99,7 +101,7 @@ session_start();
             //Content
             $mail->isHTML(true);                                  //Set email format to HTML
             $mail->Subject = 'Password Request';
-            $mail->Body    = '<p>Here is your password: '.$row['password'].'</p><p>For your safety, please change your password.</p>';
+            $mail->Body    = '<p>Here is your password: '.$row['Password'].'</p><p>For your safety, please change your password.</p>';
 
             $mail->send();
             echo 'Message has been sent';

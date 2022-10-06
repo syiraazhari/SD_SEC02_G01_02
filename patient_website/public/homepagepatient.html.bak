@@ -78,20 +78,6 @@ th, td {
               <h1 class="fw-light font-base fs-6 fs-xxl-7">Hello <strong> Minu </strong>
               <p class="fs-1 mb-5">How are you doing today? <br />Take a look for your next appointment </p>
 				  
-				  <table style="width:100%">
-					<tr>
-						<th>Date</th>
-						<th>Time</th>
-				  </tr>
-				  <tr>
-						<td>23 Feb</td>
-						<td>07.30AM</td>
-				  </tr>
-				  <tr>
-						<td>23 Feb</td>
-						<td>07.30AM</td>
-				  </tr>
-				</table>
 				  
             </div>
           </div>

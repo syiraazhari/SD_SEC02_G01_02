@@ -32,17 +32,6 @@
 
   </head>
 
-<style>
-
-table, th, td {
-  border: 1px solid white;
-  border-collapse: collapse;
-}
-th, td {
-  background-color: #96D4D4;
-}
-
-</style>
 
   <body>
 
@@ -51,17 +40,15 @@ th, td {
     <!-- ===============================================-->
     <main class="main" id="top">
       <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 d-block" data-navbar-on-scroll="data-navbar-on-scroll">
-        <div class="container"><a class="navbar-brand" href="homepagepatient.html"><img src="assets/img/gallery/logo.png" width="118" alt="logo" /></a>
+        <div class="container"><a class="navbar-brand" href="index.html"><img src="assets/img/gallery/logo.png" width="118" alt="logo" /></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"> </span></button>
           <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base">
-              <li class="nav-item px-2"><a class="nav-link" aria-current="page" href="./viewprofilepatient.php">My Profile</a></li>
-			  <li class="nav-item px-2"><a class="nav-link" href="./viewlistdoctorpatient.html">Doctor List</a></li>
-			  <li class="nav-item px-2"><a class="nav-link" href="./viewappointmenthistory.html">History</a></li>
-              <li class="nav-item px-2"><a class="nav-link" href="./appointmentbookpatient.html">Book Appointment</a></li>
+              <li class="nav-item px-2"><a class="nav-link" aria-current="page" href="../../patient/login_signup/signPage.html">About Us</a></li>
+              <li class="nav-item px-2"><a class="nav-link" href="#departments">Departments</a></li>
               <li class="nav-item px-2"><a class="nav-link" href="#findUs">Help </a></li>
               <li class="nav-item px-2"><a class="nav-link" href="#findUs">Contact</a></li>
-            </ul><a class="btn btn-sm btn-outline-primary rounded-pill order-1 order-lg-0 ms-lg-4" href="./SignOut.php">Sign Out</a>
+            </ul><a class="btn btn-sm btn-outline-primary rounded-pill order-1 order-lg-0 ms-lg-4" href="./login_signup/signPage.html">Sign In</a>
           </div>
         </div>
       </nav>
@@ -72,27 +59,10 @@ th, td {
 
         <div class="container">
           <div class="row min-vh-xl-100 min-vh-xxl-25">
-            <div class="col-md-5 col-xl-6 col-xxl-7 order-0 order-md-1 text-end">
-			  </div>
+            <div class="col-md-5 col-xl-6 col-xxl-7 order-0 order-md-1 text-end"><img class="pt-7 pt-md-0 w-100" src="assets/img/gallery/hero.png" alt="hero-header" /></div>
             <div class="col-md-75 col-xl-6 col-xxl-5 text-md-start text-center py-6">
-              <h1 class="fw-light font-base fs-6 fs-xxl-7">Hello <strong> Minu </strong>
-              <p class="fs-1 mb-5">How are you doing today? <br />Take a look for your next appointment </p>
-				  
-				  <table style="width:100%">
-					<tr>
-						<th>Date</th>
-						<th>Time</th>
-				  </tr>
-				  <tr>
-						<td>23 Feb</td>
-						<td>07.30AM</td>
-				  </tr>
-				  <tr>
-						<td>23 Feb</td>
-						<td>07.30AM</td>
-				  </tr>
-				</table>
-				  
+              <h1 class="fw-light font-base fs-6 fs-xxl-7">We're <strong>determined </strong>for<br />your&nbsp;<strong>better life.</strong></h1>
+              <p class="fs-1 mb-5">You can get the care you need 24/7 – be it online or in <br />person. You will be treated by caring specialist doctors. </p><a class="btn btn-lg btn-primary rounded-pill" href="#!" role="button">Make an Appointment</a>
             </div>
           </div>
         </div>
@@ -109,7 +79,7 @@ th, td {
               <div class="bg-holder bg-size" style="background-image:url(assets/img/gallery/bg-departments.png);background-position:top center;background-size:contain;">
               </div>
               <!--/.bg-holder-->
-				<br><br><br>
+
               <h1 class="text-center">OUR DEPARTMENTS</h1>
             </div>
           </div>
@@ -187,26 +157,11 @@ th, td {
 
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-md-5 col-xxl-6">
-			  </div>
+            <div class="col-md-5 col-xxl-6"><img class="img-fluid" src="assets/img/gallery/eye-care.png" alt="..." /></div>
             <div class="col-md-7 col-xxl-6 text-center text-md-start">
-              <table>
-  				<tr>
-					<th>Company</th>
-					<th>Contact</th>
-					<th>Country</th>
-				  </tr>
-				  <tr>
-					<td>Alfreds Futterkiste</td>
-					<td>Maria Anders</td>
-					<td>Germany</td>
-				  </tr>
-				  <tr>
-					<td>Centro comercial Moctezuma</td>
-					<td>Francisco Chang</td>
-					<td>Mexico</td>
-				  </tr>
-				</table>
+              <h2 class="fw-bold text-light mb-4 mt-4 mt-lg-0">Eye Care with Top Professionals<br class="d-none d-sm-block" />and In Budget.</h2>
+              <p class="text-light">We've built a healthcare system that puts your needs first.<br class="d-none d-sm-block" />For us, there is nothing more important than the health of <br class="d-none d-sm-block" />you and your loved ones. </p>
+              <div class="py-3"><a class="btn btn-lg btn-light rounded-pill" href="#!" role="button">Learn more </a></div>
             </div>
           </div>
         </div>
@@ -215,7 +170,22 @@ th, td {
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->
-      
+      <section class="pb-0" id="about">
+
+        <div class="container">
+          <div class="row">
+            <div class="col-12 py-3">
+              <div class="bg-holder bg-size" style="background-image:url(assets/img/gallery/about-us.png);background-position:top center;background-size:contain;">
+              </div>
+              <!--/.bg-holder-->
+
+              <h1 class="text-center">ABOUT US</h1>
+            </div>
+          </div>
+        </div>
+        <!-- end of .container-->
+
+      </section>
       <!-- <section> close ============================-->
       <!-- ============================================-->
 
