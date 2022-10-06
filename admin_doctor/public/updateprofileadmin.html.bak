@@ -90,7 +90,7 @@
                         </div>
 				
 				        <div class="d-grid">
-                            <a href="./viewprofileadmin.html"><button class="btn btn-primary rounded-pill" type="submit">Update Profile</button></a>
+                            <a href="../../meinhardt-front-end/public/viewprofilepatient.html"><button class="btn btn-primary rounded-pill" type="submit">Update Profile</button></a>
                         </div>
                     </fieldset>
                 </form>
