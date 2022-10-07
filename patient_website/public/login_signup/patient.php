@@ -45,7 +45,7 @@ session_start();
 		   
 		  if(mysqli_num_rows($qry) > 0)
 		  {
-            header("Location:../homepagepatient.html");
+            header("Location:../homepagepatient.php");
 
 			 $_SESSION["Email"] = $row['Email'];
 			 $_SESSION["Password"] = $row['Password'];
