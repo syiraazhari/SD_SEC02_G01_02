@@ -69,7 +69,7 @@
               ?>
 				
               <div class="d-grid">
-                  <a href="../../meinhardt-front-end/public/updateprofilepatient.html"><button class="btn btn-primary rounded-pill" type="submit">Update Profile</button></a>
+                  <a href="./updateprofilepatient.html"><button class="btn btn-primary rounded-pill" type="submit">Update Profile</button></a>
               </div>
             </div>
           </div>
