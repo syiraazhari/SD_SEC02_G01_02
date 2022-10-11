@@ -69,18 +69,18 @@
                         <p class="fs-1 mb-5">Contact Number: </p>
                         <div class="col-md-6">
                             <label class="form-label visually-hidden" for="inputContact">Contact Number</label>
-                            <input class="form-control form-livedoc-control" name="updateEmail" id="inputEmail" type="tel" placeholder="Contact No" />
+                            <input class="form-control form-livedoc-control" name="updateContactNo" id="inputContact" type="tel" placeholder="Contact No" />
                         </div>
 
                         <p class="fs-1 mb-5">Username: </p>
                         <div class="col-md-6">
-                            <label class="form-label visually-hidden" for="inputEmail">Username</label>
+                            <label class="form-label visually-hidden" for="inputUsername">Username</label>
                             <input class="form-control form-livedoc-control" name="updateUsername" id="inputPass" type="text" placeholder="Username" />
                         </div>
 				
 				        <p class="fs-1 mb-5">Password: </p>
                         <div class="col-md-6">
-                            <label class="form-label visually-hidden" for="inputPassword">Email</label>
+                            <label class="form-label visually-hidden" for="inputPassword">Password</label>
                             <input class="form-control form-livedoc-control" name="updatePassword" id="inputEmail" type="passowrd" placeholder="Password" />
                         </div>
 

@@ -131,7 +131,7 @@
         $sql = "UPDATE `patient` SET `address` = '".$_POST["updateAddress"]."' WHERE `patient`.`email` = '".$_SESSION["email"]."';";
 
         $con = mysqli_connect("localhost", "web39", "web39", "meinhardt_hospital_appointment");
-        $sql = "UPDATE `patient` SET `phoneNumber` = '".$_POST["updateContactNo"]."' WHERE `patient`.`email` = '".$_SESSION["email"]."';";
+        $sql = "UPDATE `patient` SET `contactNo` = '".$_POST["updateContactNo"]."' WHERE `patient`.`email` = '".$_SESSION["email"]."';";
 
         $qry = mysqli_query($con, $sql);
 

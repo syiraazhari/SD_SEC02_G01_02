@@ -5,5 +5,12 @@
         loginDoctor();
     }
 
+    if (isset($_POST['forgotPasswordEmail'])) {
+        sendPasswordToEmail();
+    }
+
+    if (isset($_POST['updateDoctor'])) {
+        updateProfile();
+    }
 
 ?>
