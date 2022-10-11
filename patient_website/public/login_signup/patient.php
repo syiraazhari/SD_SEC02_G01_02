@@ -1,6 +1,7 @@
 <?php
 
-session_start();
+    session_start();
+    echo "Session started";
 	require __DIR__.'/PHPMailer/src/Exception.php';
 	require __DIR__.'/PHPMailer/src/PHPMailer.php';
 	require __DIR__.'/PHPMailer/src/SMTP.php';
@@ -118,6 +119,13 @@ session_start();
         }
 	}
 
+    function updateProfile() {
 
+        $con = mysqli_connect("localhost", "web39", "web39", "meinhardt_hospital_appointment");
+        $sql = "UPDATE `patient` SET `username` = '".$_POST["updateUsername"]."' WHERE `patient`.`email` = '".$_SESSION["email"]."';";
+
+        $qry = mysqli_query($con, $sql);
+
+    }
   
 ?>

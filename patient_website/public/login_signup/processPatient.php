@@ -14,5 +14,9 @@
         sendPasswordToEmail();
     }
 
+    if (isset($_POST['updatePatient'])) {
+        updateProfile();
+    }
+
 
 ?>

@@ -64,34 +64,34 @@
             <div class="col-md-75 col-xl-6 col-xxl-5 text-md-start text-center py-6">
               <h1 class="fw-light font-base fs-6 fs-xxl-7"></h1>
                 
-                <form action = "updateprofilepatient(old).php" method = "post">
+                <form action = "./login_signup/processPatient.php" method = "post">
                     <fieldset>
                         <p class="fs-1 mb-5">Contact Number: </p>
                         <div class="col-md-6">
                             <label class="form-label visually-hidden" for="inputContact">Contact Number</label>
-                            <input class="form-control form-livedoc-control" id="inputEmail" type="tel" placeholder="Contact No" />
+                            <input class="form-control form-livedoc-control" name="updateEmail" id="inputEmail" type="tel" placeholder="Contact No" />
                         </div>
 
                         <p class="fs-1 mb-5">Username: </p>
                         <div class="col-md-6">
                             <label class="form-label visually-hidden" for="inputEmail">Username</label>
-                            <input class="form-control form-livedoc-control" id="inputPass" type="text" placeholder="Username" />
+                            <input class="form-control form-livedoc-control" name="updateUsername" id="inputPass" type="text" placeholder="Username" />
                         </div>
 				
 				        <p class="fs-1 mb-5">Password: </p>
                         <div class="col-md-6">
                             <label class="form-label visually-hidden" for="inputPassword">Email</label>
-                            <input class="form-control form-livedoc-control" id="inputEmail" type="passowrd" placeholder="Password" />
+                            <input class="form-control form-livedoc-control" name="updatePassword" id="inputEmail" type="passowrd" placeholder="Password" />
                         </div>
 
                         <p class="fs-1 mb-5">Address: </p>
                         <div class="col-md-6">
                             <label class="form-label visually-hidden" for="inputAddress">Address</label>
-                            <input class="form-control form-livedoc-control" id="inputPass" type="text" placeholder="Address" />
+                            <input class="form-control form-livedoc-control" name="updateAddress" id="inputPass" type="text" placeholder="Address" />
                         </div>
 				
 				        <div class="d-grid">
-                            <button class="btn btn-primary rounded-pill" name="updatePatient" type="submit">Update Profile</button></a>
+                            <button class="btn btn-primary rounded-pill" name="updatePatient" type="submit">Update Profile</button>
                         </div>
                     </fieldset>
                 </form>
