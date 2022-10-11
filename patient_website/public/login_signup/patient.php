@@ -24,7 +24,16 @@
 
         $sql = "INSERT INTO patient(Name, Email, Password) VALUES('$patientName', '$patientEmail', '$patientPassword')";
 
+        $statement = db()->prepare($sql);
 
+        $statement->bindValue(':patientName', $patientName);
+        $statement->bindValue(':patientEmail', $patientEmail);
+        $statement->bindValue(':patientPassword', password_hash($patientPassword, PASSWORD_BCRYPT));
+        $statement->bindValue(':is_admin', (int)$is_admin, PDO::PARAM_INT);
+        $statement->bindValue(':activation_code', password_hash($activation_code, PASSWORD_DEFAULT));
+        $statement->bindValue(':activation_expiry', date('Y-m-d H:i:s',  time() + $expiry));
+
+        return $statement->execute();
 
         mysqli_query($con, $sql);
     }
