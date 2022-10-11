@@ -75,7 +75,14 @@ th, td {
             <div class="col-md-5 col-xl-6 col-xxl-7 order-0 order-md-1 text-end">
 			  </div>
             <div class="col-md-75 col-xl-6 col-xxl-5 text-md-start text-center py-6">
-              <h1 class="fw-light font-base fs-6 fs-xxl-7">Hello <strong> Minu </strong>
+              <!--<h1 class="fw-light font-base fs-6 fs-xxl-7">Hello <strong> Minu </strong>-->
+			  <?php
+          session_start();
+
+          //echo "Your email: ".$_SESSION['Email'];
+
+          echo '<h1 class="fw-light font-base fs-6 fs-xxl-7">Hello <strong> '.$_SESSION['name'].' </strong>'
+			  ?>
               <p class="fs-1 mb-5">How are you doing today? <br />Take a look for your next appointment </p>
 				  
 				  <table style="width:100%">

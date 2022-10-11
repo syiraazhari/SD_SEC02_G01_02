@@ -45,10 +45,16 @@ session_start();
 		   
 		  if(mysqli_num_rows($qry) > 0)
 		  {
-            header("Location:../homepagepatient.php");
+            
+            
+            $_SESSION['name'] = $row['name'];
+			 $_SESSION["email"] = $row['email'];
+			 $_SESSION["password"] = $row['password'];
 
-			 $_SESSION["Email"] = $row['Email'];
-			 $_SESSION["Password"] = $row['Password'];
+             echo '<script type="text/javascript">alert('.$row['email'].');</script>';
+
+             header("Location:../homepagepatient.php");
+
 			 
 			 if(isset($_SESSION['email']))
 	          if(isset($_SESSION['password']))
