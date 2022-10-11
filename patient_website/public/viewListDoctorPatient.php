@@ -64,7 +64,7 @@
             <div class="col-md-5 col-xl-6 col-xxl-7 order-0 order-md-1 text-end">
 			  </div>
             <div class="col-md-75 col-xl-6 col-xxl-5 text-md-start text-center py-6">
-              <p class="fs-1 mb-5">List of suitable doctors <br />For your case. </p>
+              <p class="fs-1 mb-5">List of doctors</p>
 				
 				<table>
 					<tr>
