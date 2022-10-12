@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en-US" dir="ltr">
 
@@ -64,7 +67,7 @@
             <div class="col-md-75 col-xl-6 col-xxl-5 text-md-start text-center py-6">
               <h1 class="fw-light font-base fs-6 fs-xxl-7"></h1>
                 
-                <form action = "./login_signup/processPatient.php" method = "post">
+                <!-- <form action = "./login_signup/processPatient.php" method = "post">
                     <fieldset>
                         <p class="fs-1 mb-5">Contact Number: </p>
                         <div class="col-md-6">
@@ -89,12 +92,58 @@
                             <label class="form-label visually-hidden" for="inputAddress">Address</label>
                             <input class="form-control form-livedoc-control" name="updateAddress" id="inputPass" type="text" placeholder="Address" />
                         </div>
+
+                        <p class="fs-1 mb-5"></p>
+				
+				        <div class="d-grid">
+                            <button class="btn btn-primary rounded-pill" name="updatePatient" type="submit">Update Profile</button>
+                        </div>
+                    </fieldset>
+                </form> -->
+                <?php
+
+                    $con = mysqli_connect("localhost", "web39", "web39", "meinhardt_hospital_appointment");
+                    $sql = "SELECT * FROM `patient` WHERE email = '".$_SESSION["email"]."'";
+                    $qry = mysqli_query($con, $sql);
+                    $row = mysqli_fetch_array($qry);
+
+                    echo '
+                    <form action = "./login_signup/processPatient.php" method = "post">
+                    <fieldset>
+                        <p class="fs-1 mb-5">Contact Number: </p>
+                        <div class="col-md-6">
+                            <label class="form-label visually-hidden" for="updateContactNo">Contact Number</label>
+                            <input class="form-control form-livedoc-control" name="updateContactNo" id="inputContact" type="tel" placeholder="Contact No" value="'.$row['phoneNumber'].'"/>
+                        </div>
+
+                        <p class="fs-1 mb-5">Name: </p>
+                        <div class="col-md-6">
+                            <label class="form-label visually-hidden" for="updateUsername">Name</label>
+                            <input class="form-control form-livedoc-control" name="updateUsername" id="inputPass" type="text" placeholder="Name" value="'.$row['name'].'"/>
+                        </div>
+				
+				        <p class="fs-1 mb-5">Password: </p>
+                        <div class="col-md-6">
+                            <label class="form-label visually-hidden" for="inputPassword">Password</label>
+                            <input class="form-control form-livedoc-control" name="updatePassword" id="inputEmail" type="password" placeholder="Password" value="'.$row['password'].'"/>
+                        </div>
+
+                        <p class="fs-1 mb-5">Address: </p>
+                        <div class="col-md-6">
+                            <label class="form-label visually-hidden" for="inputAddress">Address</label>
+                            <input class="form-control form-livedoc-control" name="updateAddress" id="inputPass" type="text" placeholder="Address" value="'.$row['address'].'"/>
+                        </div>
+
+                        <p class="fs-1 mb-5"></p>
 				
 				        <div class="d-grid">
                             <button class="btn btn-primary rounded-pill" name="updatePatient" type="submit">Update Profile</button>
                         </div>
                     </fieldset>
                 </form>
+                    
+                    '
+                ?>
                 
             </div>
           </div>

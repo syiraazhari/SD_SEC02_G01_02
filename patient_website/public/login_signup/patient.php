@@ -124,15 +124,6 @@
         $con = mysqli_connect("localhost", "web39", "web39", "meinhardt_hospital_appointment");
         $sql = "UPDATE `patient` SET `username` = '".$_POST["updateUsername"]."' WHERE `patient`.`email` = '".$_SESSION["email"]."';";
 
-        $con = mysqli_connect("localhost", "web39", "web39", "meinhardt_hospital_appointment");
-        $sql = "UPDATE `patient` SET `password` = '".$_POST["updatePassword"]."' WHERE `patient`.`email` = '".$_SESSION["email"]."';";
-
-        $con = mysqli_connect("localhost", "web39", "web39", "meinhardt_hospital_appointment");
-        $sql = "UPDATE `patient` SET `address` = '".$_POST["updateAddress"]."' WHERE `patient`.`email` = '".$_SESSION["email"]."';";
-
-        $con = mysqli_connect("localhost", "web39", "web39", "meinhardt_hospital_appointment");
-        $sql = "UPDATE `patient` SET `contactNo` = '".$_POST["updateContactNo"]."' WHERE `patient`.`email` = '".$_SESSION["email"]."';";
-
         $qry = mysqli_query($con, $sql);
 
     }
