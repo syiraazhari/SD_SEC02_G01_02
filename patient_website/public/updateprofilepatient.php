@@ -118,8 +118,8 @@
 
                         <p class="fs-1 mb-5">Name: </p>
                         <div class="col-md-6">
-                            <label class="form-label visually-hidden" for="updateUsername">Name</label>
-                            <input class="form-control form-livedoc-control" name="updateUsername" id="inputPass" type="text" placeholder="Name" value="'.$row['name'].'"/>
+                            <label class="form-label visually-hidden" for="updateName">Name</label>
+                            <input class="form-control form-livedoc-control" name="updateName" id="inputPass" type="text" placeholder="Name" value="'.$row['name'].'"/>
                         </div>
 				
 				        <p class="fs-1 mb-5">Password: </p>
