@@ -66,7 +66,7 @@
             <div class="col-md-75 col-xl-6 col-xxl-5 text-md-start text-center py-6">
               <p class="fs-1 mb-5">List of doctors</p>
 				<?php
-          include "./login_signup.php/doctor.php";
+          include "./login_signup/doctor.php";
 
           if(false){}
           else
