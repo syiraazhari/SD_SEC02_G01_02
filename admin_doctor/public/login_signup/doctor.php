@@ -77,4 +77,13 @@
         $qry = mysqli_query($con, $sql);
 
     }
+
+    function getDoctorList()
+    {
+        include "connection.php";
+
+        $sql = "SELECT * FROM doctor";
+        $qry = mysqli_query($con, $sql);
+        return $qry;
+    }
 ?>

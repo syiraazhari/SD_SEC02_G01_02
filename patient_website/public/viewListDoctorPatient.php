@@ -65,22 +65,44 @@
 			  </div>
             <div class="col-md-75 col-xl-6 col-xxl-5 text-md-start text-center py-6">
               <p class="fs-1 mb-5">List of doctors</p>
-				
-				<table>
-					<tr>
-						<th>Name</th>
-						<th>Contact</th>
-				  </tr>
-				  <tr>
-						<td>Minu Yoon</td>
-						<td>213-xxx-xx</td>
-				  </tr>
-				  <tr>
-						<td>Put Any Name</td>
-						<td>213-xxx-xx</td>
-				  </tr>
-				</table>
-				  
+				<?php
+          include "./login_signup.php/doctor.php";
+
+          if(false){}
+          else
+          {
+            $doctorList = getDoctorList();
+          }
+
+          echo "
+            <table>
+              <tr>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Email</th>
+                <th>Contact</th>
+              </tr>";
+
+            $count = 1;
+
+            while($row = mysqli_fetch_assoc($doctorList))
+            {
+              $name = $row['$name'];
+              
+              echo "
+                    <tr>
+                      <td>".$count."</td>
+                      <td>".$row['name']."</td>
+                      <td>".$row['department']."</td>
+                      <td>".$row['email']."</td>
+                      <td>".$row['phoneNum']."</td>
+                    </tr>";
+
+              $count++;
+            }
+
+            echo "</table>";
+				?>  
             </div>
           </div>
         </div>
