@@ -122,7 +122,7 @@
     function updateProfile() {
 
         $con = mysqli_connect("localhost", "web39", "web39", "meinhardt_hospital_appointment");
-        $sql = "UPDATE `patient` SET `phoneNumber` = '".$_POST['updateContactNo']."', `name` = '".$_POST["updateName"]."', `age` = '".$_POST['updatePassword']."', `address` = '".$_POST['updateAddress']."' WHERE `patient`.`email` = '".$_SESSION["email"]."';";
+        $sql = "UPDATE `patient` SET `phoneNumber` = '".$_POST['updateContactNo']."', `name` = '".$_POST["updateName"]."', `password` = '".$_POST['updatePassword']."', `address` = '".$_POST['updateAddress']."' WHERE `patient`.`email` = '".$_SESSION["email"]."';";
 
         $qry = mysqli_query($con, $sql);
 
