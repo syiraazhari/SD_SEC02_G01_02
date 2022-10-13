@@ -3,12 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 11, 2022 at 02:00 PM
--- Server version: 10.4.21-MariaDB
--- PHP Version: 8.0.11
--- Generation Time: Sep 13, 2022 at 04:39 PM
--- Server version: 10.4.21-MariaDB
--- PHP Version: 8.0.12
+-- Generation Time: Oct 13, 2022 at 05:45 AM
+-- Server version: 10.4.22-MariaDB
+-- PHP Version: 8.1.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -96,8 +93,11 @@ CREATE TABLE `patient` (
 -- Dumping data for table `patient`
 --
 
-INSERT INTO `patient` (`Username`, `Email`, `Password`, `Name`, `Address`, `phoneNumber`, `Age`, `Gender`) VALUES
-('', 'Kisvaan986912lifecool@gmail.com', '1010101012kisvaan', 'Kisvaan', '', '', 0, '');
+INSERT INTO `patient` (`username`, `email`, `password`, `name`, `address`, `phoneNumber`, `age`, `gender`) VALUES
+('we', 'ewwrwew@gmail', 'what', 'asdkianasna', '', '0193218', 12, 'male'),
+('wtf', 'Kisvaan986912lifecool@gmail.com', '1010101012kisvaan', 'Kisvaan', '', '', 15, ''),
+('', 'robtop@nonexistent', 'rubrub', 'geometry dash', 'bababoo', '014014014', 0, ''),
+('', 'stampy@minecraft', 'stampy', 'Stampy', '', '019675', 0, '');
 
 --
 -- Indexes for dumped tables
@@ -126,7 +126,8 @@ ALTER TABLE `doctor`
 -- Indexes for table `patient`
 --
 ALTER TABLE `patient`
-  ADD PRIMARY KEY (`Email`);
+  ADD PRIMARY KEY (`email`),
+  ADD UNIQUE KEY `email` (`email`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
