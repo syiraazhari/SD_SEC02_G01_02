@@ -59,28 +59,30 @@
                 <div class="row min-vh-xl-100 min-vh-xxl-25">
                     <div class="col-md-5 col-xl-6 col-xxl-7 order-0 order-md-1 text-end">
 					</div>
+					<form method="post" action="./login_signup/processDoctor.php">>
                     <div class="col-md-75 col-xl-6 col-xxl-5 text-md-start text-center py-6">
 
-                        <p class="fs-1 mb-5">Doctor ID: </p>
+                        <p class="fs-1 mb-5">Doctor Username: </p>
                         <div class="col-md-6">
-                            <label class="form-label visually-hidden" for="inputEmail">Doctor Id</label>
-                            <input class="form-control form-livedoc-control" id="inputEmail" name ="SignInDoctorId" type="email" placeholder="Doctor ID" />
+                            <label class="form-label visually-hidden" for="inputUsername">Username</label>
+                            <input class="form-control form-livedoc-control" id="inputUsername" type="username" placeholder="Doctor Username" />
                         </div>
 
                         <p class="fs-1 mb-5">Password: </p>
                         <div class="col-md-6">
                             <label class="form-label visually-hidden" for="inputPass">Password</label>
-                            <input class="form-control form-livedoc-control" id="inputPass" name ="SignInDoctorPassword" type="password" placeholder="Password" />
+                            <input class="form-control form-livedoc-control" id="inputPass" type="pass" placeholder="Password" />
                         </div>
 						
                         <div class="d-grid">
-                            <a href="./homepagedoctor.html"> <button class="btn btn-primary rounded-pill" name="SignInButton" type="submit">Sign In</button> </a>
+                            <a href="./homepagedoctor.php"> <button class="btn btn-primary rounded-pill" type="submit">Sign In</button> </a>
                         </div>
 						
 						<a class="fs-1 mb-5" href="../../meinhardt-front-end/public/forgotpassdoctor.html">Forgot Password </a>
                         <div class="d-grid">
                         </div>
                     </div>
+					</form>
                 </div>
             </div>
 			</section>

@@ -2,7 +2,7 @@
     include "./admin.php";
 
     if (isset($_POST['loginAdmin'])) {
-        loginDoctor();
+        loginAdmin();
     }
 
 
