@@ -103,7 +103,7 @@
                 <?php
 
                     $con = mysqli_connect("localhost", "web39", "web39", "meinhardt_hospital_appointment");
-                    $sql = "SELECT * FROM `patient` WHERE email = '".$_SESSION["email"]."'";
+                    $sql = "SELECT * FROM `patient` WHERE Email = '".$_SESSION["email"]."'";
                     $qry = mysqli_query($con, $sql);
                     $row = mysqli_fetch_array($qry);
 
