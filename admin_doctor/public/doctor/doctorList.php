@@ -6,7 +6,7 @@
                 font-family: "Helvetica Neue",Helvetica,Arial;
                 width: 1100px;
                 margin: auto;
-                background-color: black;
+                background-color: #000072;
                 color: white;
             }
             table {
