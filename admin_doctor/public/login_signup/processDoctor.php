@@ -1,16 +1,11 @@
 <?php
     include "./doctor.php";
 
-    if (isset($_POST['loginDoctor'])) {
+    if (isset($_POST['SignInButton'])) {
+		addDoctor();
         loginDoctor();
+		
     }
 
-    if (isset($_POST['forgotPasswordEmail'])) {
-        sendPasswordToEmail();
-    }
-
-    if (isset($_POST['updateDoctor'])) {
-        updateProfile();
-    }
-
+   
 ?>
