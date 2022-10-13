@@ -69,7 +69,7 @@ a {
 </head>
 <body>
 
-<form action="">
+<form action="./processDoctor.php" method="post">
   <div class="container">
     <h1>Register Doctor</h1>
     <p>Create an account for doctor.</p>
@@ -81,14 +81,17 @@ a {
     <label for="email"><b>Email</b></label>
     <input type="email" placeholder="Enter Email" name="doctorEmail" id="email" required>
 
+    <label for="phoneNum"><b>Phone Number</b></label>
+    <input type="text" placeholder="Enter phone number" name="doctorPhoneNum" id="phoneNum" required>
+
     <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+    <input type="password" placeholder="Enter Password" name="doctorPassword" id="psw" required>
 
     <label for="department"><b>Department</b></label>
     <input type="text" placeholder="Department" name="department" id="department" required>
     <hr>
 
-    <button type="submit" class="registerbtn">Register</button>
+    <button type="submit" class="registerbtn" name="registerDoctorBtn">Register</button>
   </div>
   
 </form>
