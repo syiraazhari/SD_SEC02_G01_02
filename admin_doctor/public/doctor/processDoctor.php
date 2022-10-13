@@ -4,6 +4,7 @@
 
     if (isset($_POST['registerDoctorBtn'])) {
         assignDoctor();
+        header('Location:../homepageadmin.html');
     }
 
 ?>
