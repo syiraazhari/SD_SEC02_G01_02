@@ -16,4 +16,13 @@
     }
 
 
+    function getListOfDoctors() {
+        $con = mysqli_connect("localhost", "web39", "web39", "meinhardt_hospital_appointment");
+
+        $sql = "SELECT * FROM `doctor`";
+        $qry = mysqli_query($con, $sql);
+        return $qry;
+    }
+
+
 ?>
