@@ -82,7 +82,7 @@
         echo $patientEmail;
 
         $con = mysqli_connect("localhost", "web39", "web39", "meinhardt_hospital_appointment");
-        $sql = "SELECT * FROM `patient` WHERE Email = '".$patientEmail."'";
+        $sql = "SELECT * FROM `patient` WHERE email = '".$patientEmail."'";
         $qry = mysqli_query($con, $sql);
         $row = mysqli_fetch_array($qry);
 	
@@ -97,7 +97,7 @@
             $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
             $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
             $mail->Username   = 'meinhardt.hospital@gmail.com';                     //SMTP username
-            $mail->Password   = 'tobecwuyasolfygr';                               //SMTP password
+            $mail->Password   = 'jteohfvbhcububdy';                         //SMTP password
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
             $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
@@ -108,7 +108,7 @@
             //Content
             $mail->isHTML(true);                                  //Set email format to HTML
             $mail->Subject = 'Password Request';
-            $mail->Body    = '<p>Here is your password: '.$row['Password'].'</p><p>For your safety, please change your password.</p>';
+            $mail->Body    = '<p>Here is your password: '.$row['password'].'</p><p>For your safety, please change your password.</p>';
 
             $mail->send();
             echo 'Message has been sent';
