@@ -5,12 +5,14 @@ require 'vendor/autoload.php';
 // This is your test secret API key.
 \Stripe\Stripe::setApiKey('sk_test_51LxMeoFLj2Qclg4vN4GkncUxHOOSSIgYbcNnsqLr9oFTjrvoN5NTfeDkbj1V7jKxHtHZOpQfjkRFRzFNzKMyF4DX00UlMn8g25');
 
+/*
 function calculateOrderAmount(array $items): int {
     // Replace this constant with a calculation of the order's amount
     // Calculate the order total on the server to prevent
     // people from directly manipulating the amount on the client
     return 1400;
 }
+*/
 
 header('Content-Type: application/json');
 
@@ -21,7 +23,7 @@ try {
 
     // Create a PaymentIntent with amount and currency
     $paymentIntent = \Stripe\PaymentIntent::create([
-        'amount' => calculateOrderAmount($jsonObj->items),
+        'amount' => 30000,
         'currency' => 'myr',
         'automatic_payment_methods' => [
             'enabled' => true,
