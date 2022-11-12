@@ -100,7 +100,7 @@ th, td {
 				  </tr>
 				</table>
 				<br>
-				<p class="fs-1 mb-5">Minimum deposit is €200 </p>
+				<p class="fs-1 mb-5">Minimum deposit is €200. Please refer front desk for further payment. </p>
 				<br>
 				<div class="d-grid">
                             <a href="../../meinhardt-front-end/public/viewprofilepatient.html"><button class="btn btn-primary rounded-pill" type="submit">Pay deposit</button></a>
