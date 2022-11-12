@@ -74,26 +74,28 @@ th, td {
             <div class="col-md-5 col-xl-6 col-xxl-7 order-0 order-md-1 text-end">
 			  </div>
             <div class="col-md-75 col-xl-6 col-xxl-5 text-md-start text-center py-6">
-			<h1 class="fw-light font-base fs-6 fs-xxl-7">Appointment History</h1>
-              <table style="width:50%">
-					<tr>
-						<th>Patient's Name</th>
-						<th>Date</th>
-						<th>Time</th>
-				  </tr>
-				  <tr>
-						<td>lalalallala</td>
-						<td>23 Feb</td>
-						<td>07.30AM</td>
-				  </tr>
-				  <tr>
-						<td>run away for fun</td>
-						<td>23 Feb</td>
-						<td>07.30AM</td>
-				  </tr>
-				</table>
-				  
-              <a class="btn btn-lg btn-primary rounded-pill" href="./doctor/assignDoctor.html" role="button">Print Sales Report</a>
+              <h1 class="fw-light font-base fs-6 fs-xxl-7">Update Event</h1>
+              <p class="fs-1 mb-5">Event's Name </p>
+                        <div class="col-md-6">
+                            <label class="form-label visually-hidden" for="inputEmail">Event's Name</label>
+                            <input class="form-control form-livedoc-control" id="inputEmail" type="eventname" placeholder="Event's Name" />
+                        </div>
+
+                        <p class="fs-1 mb-5">Date </p>
+                        <div class="col-md-6">
+                            <label class="form-label visually-hidden" for="inputDate">Date</label>
+                            <input class="form-control form-livedoc-control" id="inputDate" type="Date" placeholder="Date" />
+                        </div>
+				
+				<p class="fs-1 mb-5">Time: </p>
+                        <div class="col-md-6">
+                            <label class="form-label visually-hidden" for="inputTime">Time</label>
+                            <input class="form-control form-livedoc-control" id="inputTime" type="Time" placeholder="Time" />
+                        </div>
+				
+				<div class="d-grid">
+                            <a href="../../meinhardt-front-end/public/viewprofilepatient.html"><button class="btn btn-primary rounded-pill" type="submit">Save Event</button></a>
+                        </div>
             </div>
           </div>
         </div>
