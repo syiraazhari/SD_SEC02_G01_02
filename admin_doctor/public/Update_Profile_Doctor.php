@@ -19,12 +19,12 @@
 		if($sql12)
 		{
 			/*successful*/
-			header('location: viewprofilepatient.html');
+			header('location: viewprofiledoctor.html');
 		}
 		else
 		{
 			/*unsuccessful*/
-			header('updateprofilepatient.html');
+			header('viewprofiledoctor.html');
 		}
 		
 	}

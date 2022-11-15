@@ -24,7 +24,7 @@
 		else
 		{
 			/*unsuccessful*/
-			header('updateprofileadmin.html');
+			header('viewprofileadmin.html');
 		}
 		
 	}

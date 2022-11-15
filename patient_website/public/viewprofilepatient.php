@@ -67,7 +67,15 @@
             <div class="col-md-5 col-xl-6 col-xxl-7 order-0 order-md-1 text-end"><img class="pt-7 pt-md-0 w-100" src="assets/img/gallery/hero.png" alt="hero-header" /></div>
             <div class="col-md-75 col-xl-6 col-xxl-5 text-md-start text-center py-6">
               <?php
-              ?>
+                    session_start();
+    
+                    //echo "Your email: ".$_SESSION['Email'];
+    
+                    echo '<h1 class="fw-light font-base fs-6 fs-xxl-7"><strong>'.$_SESSION['name'].'</strong>';
+                    echo 'Username: ' .$_SESSION['username'];
+                    echo 'Contact Number: ' .$_SESSION['phoneNumber'];
+                    echo 'Email: ' .$_SESSION['email'];
+                ?>
 				
               <div class="d-grid">
                   <a href="./updateprofilepatient.php"><button class="btn btn-primary rounded-pill" type="submit">Update Profile</button></a>
