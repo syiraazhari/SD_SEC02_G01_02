@@ -75,18 +75,34 @@ th, td {
               <p class="fs-1 mb-5">List of suitable doctors <br />For your case. </p>
 				
 				<table style="width:100%">
-					<tr>
-						<th>Name</th>
-						<th>Contact</th>
-				  </tr>
-				  <tr>
-						<td>Minu Yoon</td>
-						<td>213-xxx-xx</td>
-				  </tr>
-				  <tr>
-						<td>Put Any Name</td>
-						<td>213-xxx-xx</td>
-				  </tr>
+          <?php
+              include './doctor.php';
+
+              $doctorList = getListOfDoctors();
+
+              echo "
+                <br><br>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone number</th>
+                    <th>Department</th>
+                </tr>";
+
+              $count = 1;
+
+              while ($row = mysqli_fetch_array($doctorList))
+              {
+                echo "
+                <tr>
+                    <td>".$row['name']."</td>
+                    <td>".$row['email']."</td>
+                    <td>".$row['phoneNumber']."</td>
+                    <td>".$row['department']."</td>
+                </tr>";
+                $count++;
+              }
+          ?>
 				</table>
 				  
             </div>
