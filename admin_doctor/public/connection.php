@@ -1,5 +1,5 @@
 <?php
-	$conn=mysqli_connect("localhost", "root", "", "meinhardt_hospital_appointment");
+	$conn=mysqli_connect("localhost", "web39", "web39", "meinhardt_hospital_appointment");
 	
 	if(!$conn)
 	{
