@@ -69,8 +69,6 @@
               <?php
                     session_start();
     
-                    //echo "Your email: ".$_SESSION['Email'];
-    
                     echo '<h1 class="fw-light font-base fs-6 fs-xxl-7"><strong>'.$_SESSION['name'].'</strong>';
                     echo 'Username: ' .$_SESSION['username'];
                     echo 'Contact Number: ' .$_SESSION['phoneNumber'];
