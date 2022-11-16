@@ -62,20 +62,20 @@
 					<form method="post" action="./login_signup/processAdmin.php">
                     <div class="col-md-75 col-xl-6 col-xxl-5 text-md-start text-center py-6">
 
-                        <p class="fs-1 mb-5">Admin ID: </p>
+                        <p class="fs-1 mb-5">Admin Username: </p>
                         <div class="col-md-6">
-                            <label class="form-label visually-hidden" for="inputEmail">Admin ID</label>
-                            <input class="form-control form-livedoc-control" id="inputEmail" type="email" placeholder="Admin ID" />
+                            <label class="form-label visually-hidden" for="inputUsername">Admin Username</label>
+                            <input class="form-control form-livedoc-control" id="inputUsername" name="loginUsername" type="text" placeholder="Admin Username" />
                         </div>
 
                         <p class="fs-1 mb-5">Password: </p>
                         <div class="col-md-6">
                             <label class="form-label visually-hidden" for="inputPass">Password</label>
-                            <input class="form-control form-livedoc-control" id="inputPass" type="pass" placeholder="Password" />
+                            <input class="form-control form-livedoc-control" id="inputPass" name="loginPassword" type="password" placeholder="Password" />
                         </div>
 						
                         <div class="d-grid">
-                            <a href="./homepageadmin.html"> <button class="btn btn-primary rounded-pill" type="submit">Sign In</button> </a>
+                             <button class="btn btn-primary rounded-pill" name="LoginAdminButton" type="submit">Sign In</button> 
                         </div>
 						
 						<a class="fs-1 mb-5" href="../../meinhardt-front-end/public/forgotpassadmin.html">Forgot Password </a>
