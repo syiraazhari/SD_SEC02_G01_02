@@ -24,8 +24,6 @@
 
         $sql = "INSERT INTO patient(Name, Email, Password) VALUES('$patientName', '$patientEmail', '$patientPassword')";
 
-
-
         mysqli_query($con, $sql);
     }
 
@@ -40,8 +38,6 @@
         $sql = "SELECT * FROM `patient` WHERE Email = '".$patientEmail."' AND Password = '".$patientPassword."'";
         $qry = mysqli_query($con, $sql);
 		$row =mysqli_fetch_array($qry);
-		  
-		  
 		  
 		   
 		  if(mysqli_num_rows($qry) > 0)
