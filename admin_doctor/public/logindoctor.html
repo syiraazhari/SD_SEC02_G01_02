@@ -62,20 +62,22 @@
 					<form method="post" action="./login_signup/processDoctor.php">>
                     <div class="col-md-75 col-xl-6 col-xxl-5 text-md-start text-center py-6">
 
-                        <p class="fs-1 mb-5">Doctor Username: </p>
+                        <p class="fs-1 mb-5">Doctor Email: </p>
                         <div class="col-md-6">
-                            <label class="form-label visually-hidden" for="inputUsername">Username</label>
-                            <input class="form-control form-livedoc-control" id="inputUsername" type="username" placeholder="Doctor Username" />
+                            <label class="form-label visually-hidden" for="inputUsername">Email</label>
+                            <input class="form-control form-livedoc-control" id="inputUsername" name="doctorEmail" type="text" placeholder="Email" />
                         </div>
 
                         <p class="fs-1 mb-5">Password: </p>
                         <div class="col-md-6">
                             <label class="form-label visually-hidden" for="inputPass">Password</label>
-                            <input class="form-control form-livedoc-control" id="inputPass" type="pass" placeholder="Password" />
+                            <input class="form-control form-livedoc-control" id="inputPass" name="doctorPassword" type="password" placeholder="Password" />
                         </div>
 						
+                        <hr>
+                        <hr>
                         <div class="d-grid">
-                            <button class="btn btn-primary rounded-pill" type="submit">Sign In</button>
+                            <button class="btn btn-primary rounded-pill" name="loginDoctor" type="submit">Sign In</button>
                         </div>
 						
 						<a class="fs-1 mb-5" href="../../meinhardt-front-end/public/forgotpassdoctor.html">Forgot Password </a>

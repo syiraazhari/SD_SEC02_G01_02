@@ -1,11 +1,11 @@
 <?php
     function loginDoctor() {
-        $doctorEmail = $_POST["loginUsername"];
-        $doctorPassword = $_POST["loginPassword"];
+        $doctorEmail = $_POST["doctorEmail"];
+        $doctorPassword = $_POST["doctorPassword"];
 
         $con = mysqli_connect("localhost", "web39", "web39", "meinhardt_hospital_appointment");
 
-        $sql = "SELECT * FROM `doctor` WHERE username = '".$doctorUsername."' AND password = '".$doctorPassword."'";
+        $sql = "SELECT * FROM `doctor` WHERE email = '".$doctorEmail."' AND password = '".$doctorPassword."'";
         $qry = mysqli_query($con, $sql);
 
         if (mysqli_num_rows($qry) > 0) {
@@ -13,6 +13,7 @@
         }
         else {
             echo "<script>alert('Invalid parameters');</script>";
+            header("Location:../logindoctor.html");
         }
     }
 
