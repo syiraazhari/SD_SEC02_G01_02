@@ -1,11 +1,19 @@
-=========
-12/9/2022
-=========
+XAMPP - https://www.apachefriends.org/
+GITHUB SOURCE CODE - https://github.com/syiraazhari/SD_SEC02_G01_02
 
-REMINDER (DO NOT DELETE):
+LINK FOR WEBSITE - THROUGH APACHE SERVER (XAMPP)
+USERNAMES AND PASSWORDS
 
-- Database name is meinhardt_hospital_appointment
-- If there's an error, check the mysqli_connect parameters in PHP files
-- Landing page for patient is ./patient_website/public/index.html
+FOR PATIENTS
+USERNAME: Minu
+EMAIL: amirah.snydex@gmail.com
+PASSWORD: 7890
 
-// Harraz
+FOR DOCTORS
+USERNAME: Minu
+EMAIL: minuaaa7@gmail.com
+PASSWORD: 12345
+
+FOR ADMINS
+USERNAME: admin1
+PASSWORD: password123
